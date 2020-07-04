@@ -26,20 +26,6 @@ void main(List<String> args) {
   for (int l=1;l<=2;l++){
     print("${createLine(calTotalSpace(max, 1), 1)}");
   }
-
-
-
-
-
-
-
-
 }
 
-String getName(){
-  return "hello";
-}
 
-void process(String name){
-  print("Name is ${name}");
-}
