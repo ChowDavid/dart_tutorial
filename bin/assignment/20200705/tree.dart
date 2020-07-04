@@ -9,10 +9,9 @@ int calTotalSpace(int max,int totalStar){
 }
 
 String createLine(int totalSpace, int totalStar){
-  String center = "".padLeft(totalStar,"*");
-  String left = "".padLeft(totalSpace);
-  String right = "".padLeft(totalSpace);
-  return "${left}${center}${right}";
+  String center = "*"*totalStar;
+  String leftRight = " "*totalSpace;
+  return "${leftRight}${center}${leftRight}";
 }
 
 void main(List<String> args) {
