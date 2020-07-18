@@ -1,8 +1,10 @@
 
+import 'dart:collection';
+
 main(List<String> args){
   Set<String> aSet,bSet;
   aSet = new Set();
-  bSet = new Set();
+  bSet = new LinkedHashSet();
 
   //aSet.add(1);
   aSet.add('hello');
@@ -10,6 +12,11 @@ main(List<String> args){
 
   bSet.add('apple');
   bSet.add('hello');
+  bSet.add('orange');
+
+
+  print(aSet);
+  print(bSet);
 
 
   print(aSet.length);

@@ -10,6 +10,7 @@ void main(List<String> args){
   list3 = [1,true,"string",list1,list3];
   list4 = new List();
 
+
   print(list2);
   list1.add(4);
   print(list2);
