@@ -3,7 +3,9 @@ import 'dart:collection';
 
 void main(List<String> args){
   Set<String> aSet,bSet;
-  aSet =  Set();
+  aSet =  <String>{};
+
+  // ignore: prefer_collection_literals
   bSet =  LinkedHashSet();
 
   //aSet.add(1);
