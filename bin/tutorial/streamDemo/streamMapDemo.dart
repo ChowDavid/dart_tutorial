@@ -2,13 +2,10 @@
 
 import 'numberCreator/NumberCreator.dart';
 
-void main(){
+void main() {
   final myStream = NumberCreator().stream;
 
-  final subscription = myStream.map((event) => 'Number $event').listen((data) {
+  myStream.map((event) => 'Number $event').listen((data) {
     print('Data $data');
   });
-
-
-
 }

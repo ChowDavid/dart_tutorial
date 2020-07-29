@@ -1,7 +1,7 @@
 import 'dart:collection';
 
-main(List<String> args){
-  Queue q= new Queue();
+void main(List<String> args) {
+  var q = Queue();
   q.add(1);
   q.add(2);
   q.add(3);
@@ -10,6 +10,4 @@ main(List<String> args){
   q.removeFirst();
 
   print(q);
-
-
 }

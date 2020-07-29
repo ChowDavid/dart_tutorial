@@ -2,13 +2,10 @@
 
 import 'numberCreator/NumberCreator.dart';
 
-void main(){
+void main() {
   final myStream = NumberCreator().stream;
 
-  final subscription = myStream.where((event) => event%2==0).listen((data) {
+  myStream.where((event) => event % 2 == 0).listen((data) {
     print('Data $data');
   });
-
-
-
 }
