@@ -1,4 +1,5 @@
 //https://dart.dev/articles/libraries/creating-streams
+//https://www.youtube.com/watch?v=nQBpOIHE4eE
 
 import 'numberCreator/NumberDuplicateCreator.dart';
 
