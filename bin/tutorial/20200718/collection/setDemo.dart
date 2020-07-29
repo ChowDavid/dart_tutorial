@@ -1,10 +1,10 @@
 
 import 'dart:collection';
 
-main(List<String> args){
+void main(List<String> args){
   Set<String> aSet,bSet;
-  aSet = new Set();
-  bSet = new LinkedHashSet();
+  aSet =  Set();
+  bSet =  LinkedHashSet();
 
   //aSet.add(1);
   aSet.add('hello');
@@ -20,7 +20,7 @@ main(List<String> args){
 
 
   print(aSet.length);
-  print(aSet.contains("apple"));
+  print(aSet.contains('apple'));
   print(aSet.containsAll(bSet));
   print(bSet.containsAll(aSet));
   print(aSet.difference(bSet));

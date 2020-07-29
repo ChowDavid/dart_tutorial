@@ -1,4 +1,4 @@
-main(List<String> args){
+void main(List<String> args){
 
   var name='david';
   var age=16;
@@ -9,7 +9,6 @@ main(List<String> args){
     print(age);
   } else if (name=='chow') {
     print('branch2');
-    bool good=true;
     age=18;
   } else {
     print('branch3');

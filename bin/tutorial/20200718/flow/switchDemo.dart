@@ -1,7 +1,7 @@
 
-main(List<String> args){
+void main(List<String> args){
 
-  int age = 18;
+  var age = 18;
 
   switch(age){
     case 18:
