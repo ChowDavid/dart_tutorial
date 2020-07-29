@@ -8,13 +8,13 @@ main(List<String> args){
       print('something 18');
       break;
     case 19:
-      print("something 19");
+      print('something 19');
       break;
     case 20:
-      print("something 20");
+      print('something 20');
       break;
     default:
-      print("else");
+      print('else');
       break;
   }
 
@@ -29,7 +29,7 @@ main(List<String> args){
       break;
 
     default:
-      print("else");
+      print('else');
       break;
   }
 }

@@ -7,9 +7,7 @@
  */
 
 
-/**
- * Mature and complete async-await for user interfaces containing event-driven code, paired with isolate-based concurrency
- */
+/// Mature and complete async-await for user interfaces containing event-driven code, paired with isolate-based concurrency
 void main(){
   print('Before async');
   //Wait then the value return
@@ -25,9 +23,7 @@ void main(){
 
 }
 
-/**
- * in this event loop it will wait until Future.delayed completed
- */
+/// in this event loop it will wait until Future.delayed completed
 Future<String> readNews(int id) async{
   print('War Start Today $id!!');
   await Future.delayed(Duration(seconds: 5));

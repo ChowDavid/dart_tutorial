@@ -1,7 +1,7 @@
 
 Future<void> main() async{
 
-  List allResult=[];
+  var allResult=[];
   var future=  Future.delayed(
       Duration(seconds: 3),
           ()=>12,

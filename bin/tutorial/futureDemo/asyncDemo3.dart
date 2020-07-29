@@ -1,7 +1,5 @@
 
 import 'dart:cli';
-import 'dart:io';
-
 void main(){
   print('Before async');
   waitFor(readNews());
