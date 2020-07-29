@@ -2,7 +2,7 @@
 
 void main(List<String> args){
   var minNum =2;
-  var maxNUm=20;
+  var maxNUm=9999;
   var start = DateTime.now().millisecondsSinceEpoch;
   var primes = primeBetween(min:minNum,max:maxNUm);
   var lastfor = DateTime.now().millisecondsSinceEpoch-start;
@@ -11,7 +11,7 @@ void main(List<String> args){
 }
 
 List<int> primeBetween({int min, int max}){
-  var primeNumbers = List();
+  var primeNumbers = <int>[];
   var maxReach = max/2.ceil();
   int product;
   for (var i=(min<2?2:min); i<=max;i++){
