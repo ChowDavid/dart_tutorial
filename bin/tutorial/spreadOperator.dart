@@ -1,5 +1,5 @@
 
-main(List<String> args){
+void main(List<String> args){
 
   //raw string
   var s = r'In a raw string, not even \n gets special treatment.';
@@ -11,6 +11,7 @@ main(List<String> args){
   var list = [1,2,3];
   var list2 = [0,list];
   var list3 = [0, ...list];
+  assert(list2.length == 2);
   assert(list3.length == 4);
 
   //...? spread operator avoid null
@@ -64,6 +65,6 @@ main(List<String> args){
 
 
 //Lexical closures
-makeAdder(int addBy) {
+Function makeAdder(int addBy) {
   return (int i) => addBy + i;
 }
