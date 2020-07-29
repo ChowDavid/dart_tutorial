@@ -1,5 +1,5 @@
 
-main(List<String> args){
+void main(List<String> args){
 
   print(test4());
 
@@ -16,10 +16,10 @@ main(List<String> args){
   print(numbers);
   print(aNewNumbers);
 
-  Foo foo = new Foo();
+  var foo =  Foo();
 
   foo.bar();
-  foo.barString("name");
+  foo.barString('name');
   foo.barNumber(123);
 
 }
