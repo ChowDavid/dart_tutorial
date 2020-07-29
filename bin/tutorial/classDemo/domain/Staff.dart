@@ -12,7 +12,7 @@ abstract class Staff {
   String name;
   DateTime _dob;
   double _annualIncome;
-  Role _role;
+  Role _role;//why it has problem??
 
   Staff(this.name);
   Staff.withDetail({this.name, DateTime dob, double package, Role role}){

@@ -2,27 +2,29 @@
 
 class Shape
 {
-  drawShape()
+  void drawShape()
   {
-    print("Undefined Shape");
+    print('Undefined Shape');
   }
 }
 
 class Triangle extends Shape
 {
-  drawShape()
+  @override
+  void drawShape()
   {
-    print("Triangle Shape");
+    print('Triangle Shape');
   }
-  onlyMe(){
+  void onlyMe(){
     print('Only Me from Triangle');
   }
 }
 class Square extends Shape
 {
-  drawShape()
+  @override
+  void drawShape()
   {
-    print("Square Shape");
+    print('Square Shape');
   }
 }
 class Hexagon extends Shape
@@ -31,10 +33,10 @@ class Hexagon extends Shape
 void main()
 {
   // Upcasting
-  Shape u = new Shape();
-  Shape T=new Triangle();
-  Shape S=new Square();
-  Shape H=new Hexagon();
+  var u =  Shape();
+  Shape T= Triangle();
+  Shape S= Square();
+  Shape H= Hexagon();
 
   T.drawShape();
   S.drawShape();
