@@ -6,9 +6,9 @@ void main(List<String> args){
   List list1,list2,list3,list4;
   //assign
   list1 = [1,2,3];
-  list2 = [1,true,"string",list1];
-  list3 = [1,true,"string",list1,list3];
-  list4 = new List();
+  list2 = [1,true,'string',list1];
+  list3 = [1,true,'string',list1,list3];
+  list4 = <int>[];
 
 
   print(list2);
