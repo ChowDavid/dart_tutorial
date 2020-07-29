@@ -1,9 +1,9 @@
 
-main(List<String> args){
-  int age=0;
-  int dogyears=7;
+void main(List<String> args){
+  var age=0;
+  var dogyears=7;
   try {
-    if (age==null) throw new NullThrownError();
+    if (age==null) throw  NullThrownError();
     print(age * dogyears);
     print('ended');
   } on NoSuchMethodError{
@@ -11,7 +11,7 @@ main(List<String> args){
   } on NullThrownError {
     print('Null pointer exception');
   } catch (e){
-    print("Error ${e}");
+    print('Error ${e}');
   } finally {
     print('complete');
   }
