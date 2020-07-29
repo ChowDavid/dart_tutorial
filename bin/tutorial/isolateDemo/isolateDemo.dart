@@ -5,7 +5,7 @@ import 'dart:async';
 import 'dart:isolate';
 
 
-main() {
+void main() {
   print('Call createdIsolate');
   createIsolate().whenComplete(() => print('Isolated ended...'));
 

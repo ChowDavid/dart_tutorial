@@ -9,21 +9,21 @@ int calTotalSpace(int max,int totalStar){
 }
 
 String createLine(int totalSpace, int totalStar){
-  String center = "*"*totalStar;
-  String leftRight = " "*totalSpace;
-  return "${leftRight}${center}${leftRight}";
+  var center = '*'*totalStar;
+  var leftRight = ' '*totalSpace;
+  return '${leftRight}${center}${leftRight}';
 }
 
 void main(List<String> args) {
-  stdout.write("Please enter level of tree");
-  int level = int.parse(stdin.readLineSync());
-  int max = calTotalStar(level);
-  for (int l=1;l<=level;l++){
-    int totalStar = calTotalStar(l);
-    print("${createLine(calTotalSpace(max, totalStar), totalStar)}");
+  stdout.write('Please enter level of tree');
+  var level = int.parse(stdin.readLineSync());
+  var max = calTotalStar(level);
+  for (var l=1;l<=level;l++){
+    var totalStar = calTotalStar(l);
+    print('${createLine(calTotalSpace(max, totalStar), totalStar)}');
   }
-  for (int l=1;l<=2;l++){
-    print("${createLine(calTotalSpace(max, 1), 1)}");
+  for (var l=1;l<=2;l++){
+    print('${createLine(calTotalSpace(max, 1), 1)}');
   }
 }
 
