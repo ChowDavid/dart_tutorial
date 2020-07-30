@@ -1,7 +1,6 @@
 import 'MyIterator.dart';
 import 'MyNumbers.dart';
-import 'PrimeNumber.dart';
-import 'PrimeNumberStream.dart';
+
 
 void main() {
   var numbers = <int>[1, 3, 5, 7, 9, 11];
@@ -32,11 +31,6 @@ void main() {
     print(num);
   }
 
-  print('*' * 10);
-  //use generator
-  var primeNumber = PrimeNumber();
-  final primes = primeNumber.getPrime(min: 10000, max: 10100);
-  print(primes.length);
-  print(primes);
+
 
 }
