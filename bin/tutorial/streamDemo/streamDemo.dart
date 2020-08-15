@@ -8,5 +8,7 @@ void main() {
 
   myStream.listen((data) {
     print('Data $data');
-  }).onDone(() {print('Done');});
+  }).onDone(() {
+    print('Done');
+  });
 }

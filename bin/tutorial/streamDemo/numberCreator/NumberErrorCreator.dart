@@ -12,7 +12,11 @@ class NumberErrorCreator {
         _controller.sink.add(_count);
       }
       _count++;
-      if (_count>=100) timer.cancel();
+      if (_count>=100){
+        timer.cancel();
+        _controller.close();
+      }
+
 
     });
     print('NumberCreator ended');

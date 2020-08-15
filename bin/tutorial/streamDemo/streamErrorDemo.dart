@@ -11,6 +11,6 @@ void main() {
       onDone: () => print('Done!'),
       cancelOnError: false);
 
-  subscription.cancel();
-  subscription.resume();
+  //subscription.cancel();
+  //subscription.resume();
 }
